@@ -1,0 +1,206 @@
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ color: orange;
+ 
+ font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+  background-color: rgba(40,58,83, 1);  
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header{
+    background: rgb(27, 41, 59);
+    box-shadow: 0 0px 60px 0 black solid;
+}
+
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo{
+    float: left;
+    padding-top: 7px ;
+}
+
+nav{
+    float: right;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 50px;
+    padding-top: 10px;
+    
+    position: relative;
+}
+
+nav a{
+    text-decoration: none;
+    text-transform: uppercase ;
+}
+
+nav a:hover{
+    color: yellow;
+}
+
+nav a::before{
+    content: '';
+    display: block;
+    height: 5px;
+    
+    background-color: orange ;
+    
+    position: absulute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before{
+    width: 100%;
+
+}
+
+
+.main-body-con{
+    margin: 10px 3rem 10px 3rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border-style: dotted;
+    border: 1px orange solid;
+    background: rgb(27, 41, 59);
+}
+
+
+.profile{
+    text-align: center;
+    margin: 10px 3rem 10px 3rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border-style: dotted;
+    border: 1px orange solid;
+    background: rgb(27, 41, 59);
+}
+
+.profile-image{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;  
+}
+
+.profile-name{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.profile-title{
+    margin-bottom: 1rem;
+}
+
+.profile-details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.footer-link-con{
+    margin: 10px 43vw 10px 43vw;
+    padding: 5px;
+    border-radius: 7px;
+    border-style: dotted;
+    border: 1px orange solid;
+    background: rgb(27, 41, 59);
+    text-align: center;
+}
+
+.footer-container{
+    background: rgb(27, 41, 59);
+    padding-bottom: 4rem;
+}
+
+.footer{
+    width: 100%;
+    height: 40vh;
+    background: rgb(27, 41, 59);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.footer-heading{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+}
+
+.footer-heading h2 {
+    margin-bottom: 2rem;
+}
+
+.footer-heading a {
+    color: orange;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.footer-heading a:hover{
+    color: yellow;
+    transition: all 300ms ease-in-out ;
+}
+
+.footer-email-form h2 {
+    margin-bottom: 2rem;
+}
+
+#footer-email{
+   width: 250px; 
+   height: 40px;
+   border-radius: 4px;
+   outline: none;
+   border: none;
+   padding-left: 0.5rem;
+   font-size: 1rem;
+   margin-bottom: 1rem;
+}
+
+#footer-email::placeholder{
+    color: rgba(40,58,83, 1); 
+}
+
+#footer-email-btn{
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: rgba(40,58,83, 1);
+    outline: none;
+    border: none;
+    color: rgb(27, 41, 59);
+    font-size: 1rem;
+}
+
+#footer-email-btn:hover{
+    cursor: pointer;
+    background-color: blue;
+    transition: all 300ms ease-in-out;
+}
+
+
